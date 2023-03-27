@@ -1,0 +1,52 @@
+body{
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: yellow;
+}
+
+.feedback{
+    background-color: white;
+    width: 400px;
+    height: 200px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    position:relative;
+   
+}
+
+.emoji{
+    position:absolute;
+    left: 50%;
+    transform: translateX(-50%); /*read the transform property from Quastech CSS notes*/
+    top: 20%;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    overflow: hidden;
+}
+
+.fa-regular{
+    margin: 1px;
+    transform: translateX(0);
+    transition: transform 0.2s;
+}
+
+.rating{
+ position: absolute;
+ left: 50%;
+ transform: translateX(-50%);  /*defines 2d translation, moving the element along the x-axis*/
+bottom: 20%;
+}
+
+.fa-solid {
+    color: lightgray;
+    cursor: pointer;
+}
+
+.fa-solid.active{
+    color: gold;
+}
